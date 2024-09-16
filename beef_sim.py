@@ -20,7 +20,6 @@ munch.set_volume(0.1)    # too loud
 graph = pygame.Rect(0, 0, scrn_rect.width, 200)
 graph.midbottom = scrn_rect.midbottom
 
-pygame.time.Clock().tick(60)
 
 class Entity:
     def __init__(self, type):
@@ -175,5 +174,6 @@ while True:
     draw_graph()
     
     pygame.display.flip()
+    pygame.time.Clock().tick(60)
 
 pygame.quit()
